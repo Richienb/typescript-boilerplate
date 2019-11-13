@@ -5,15 +5,17 @@
     "repository": "https://github.com/Richienb/the-module.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
-    "main": "index.js",
+    "main": "dist/index.js",
     "files": [
-        "index.js",
-        "index.d.ts"
+        "src/**/*",
+        "dist/**/*"
     ],
     "engines": {
         "node": ">=8"
     },
     "scripts": {
+        "docs": "typedoc",
+        "build": "tsc",
         "lint": "xo",
         "test": "yarn lint && ava"
     },
@@ -21,13 +23,25 @@
     "dependencies": {},
     "devDependencies": {
         "ava": "^2.1.0",
-        "eslint-config-richienb": "^0.2.2",
+        "eslint-config-richienb": "^0.2.3",
+        "ts-node": "^8.5.0",
+        "typedoc": "^0.15.1",
+        "typescript": "^3.7.2",
         "xo": "^0.25.3"
     },
     "resolutions": {
         "eslint": "^6.6.0"
     },
     "xo": {
-        "extends": "richienb/node"
+        "extends": "richienb/ts"
+    },
+    "ava": {
+        "compileEnhancements": false,
+        "extensions": [
+            "ts"
+        ],
+        "require": [
+            "ts-node/register"
+        ]
     }
 }

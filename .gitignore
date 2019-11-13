@@ -1,3 +1,9 @@
+# Distribution directory
+dist/
+
+# Documentation directory
+docs/
+
 # Visual Studio Code
 
 .vscode/*
