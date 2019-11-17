@@ -15,7 +15,7 @@
     },
     "scripts": {
         "docs": "typedoc",
-        "build": "tsc",
+        "build": "tsc && yarn docs",
         "dev": "yarn build --watch",
         "lint": "xo",
         "test": "yarn lint && ava"
