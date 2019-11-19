@@ -25,7 +25,7 @@
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint-config-richienb": "^0.2.3",
-        "ts-node": "^8.5.0",
+        "ts-node": "^8.5.2",
         "typedoc": "^0.15.1",
         "typescript": "^3.7.2",
         "xo": "^0.25.3"
