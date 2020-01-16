@@ -27,7 +27,7 @@
         "eslint-config-richienb": "^0.3.0",
         "ts-node": "^8.6.2",
         "typedoc": "^0.16.6",
-        "typescript": "^3.7.4",
+        "typescript": "^3.7.5",
         "xo": "^0.25.3"
     },
     "resolutions": {
