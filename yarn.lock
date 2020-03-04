@@ -59,6 +59,16 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@richienb/tsconfig@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@richienb/tsconfig/-/tsconfig-0.1.1.tgz#2ece4d59dfef1f6543ba5db17fbf04ef925f5c0a"
+  integrity sha512-UgIQzgzbS33m584QafFaJIhESVfOa25eTB6Ub0KkS3ry3mqarLPbaUCnhS7Ma/aqaxi06aRnN7me3Q/aUwQxwg==
+
+"@richienb/typedoc@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@richienb/typedoc/-/typedoc-0.1.1.tgz#6d3d7e191efa38480ba3fff2f9515f7ff77b5b00"
+  integrity sha512-vr0RYWdJ3wb/9xE8t3O6S5pkCMkPuvJCB8uPJ3Irid5v7mn24KYIbalr4bd9Aq02BdVacxyi9oCFv8H0y3B28Q==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
