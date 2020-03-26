@@ -12,7 +12,9 @@
  * ```
 */
 export = function theModule(input: string, { postfix = "rainbows" }: { postfix?: string } = {}) {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+	if (typeof input !== "string") {
+		throw new TypeError(`Expected a string, got ${typeof input}`)
+	}
 
 	return `${input} & ${postfix}`
 }
