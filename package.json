@@ -7,36 +7,40 @@
 	"license": "MIT",
 	"main": "dist/index.js",
 	"files": [
-		"src/**/*",
-		"dist/**/*"
+		"dist"
 	],
 	"engines": {
 		"node": ">=10"
 	},
 	"scripts": {
-		"docs": "typedoc",
-		"build": "tsc && yarn docs",
-		"dev": "yarn tsc --watch",
+		"build": "tsc",
 		"lint": "xo",
-		"test": "yarn lint && ava"
+		"test": "xo && ava",
+		"prepublishOnly": "tsc"
 	},
 	"keywords": [],
 	"dependencies": {},
 	"devDependencies": {
 		"@richienb/tsconfig": "^0.1.1",
-		"@richienb/typedoc": "^0.1.1",
-		"ava": "^3.5.1",
-		"eslint-config-richienb": "^0.4.1",
-		"ts-node": "^8.8.1",
-		"typedoc": "^0.17.3",
+		"ava": "^3.6.0",
+		"eslint-config-richienb": "^0.4.2",
+		"ts-node": "^8.8.2",
 		"typescript": "^3.8.3",
-		"xo": "^0.28.1"
+		"xo": "^0.28.3"
 	},
 	"resolutions": {
 		"eslint": "^6.8.0"
 	},
 	"xo": {
-		"extends": "richienb/typescript"
+		"extends": "richienb/typescript",
+		"overrides": [
+			{
+				"files": "test.ts",
+				"rules": {
+					"node/no-missing-import": 0
+				}
+			}
+		]
 	},
 	"ava": {
 		"extensions": [

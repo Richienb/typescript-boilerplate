@@ -1,4 +1,4 @@
-import theModule from "./src"
+import theModule from "./source"
 import test from "ava"
 
 test("main", t => {
