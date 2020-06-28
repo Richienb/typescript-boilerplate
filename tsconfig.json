@@ -2,8 +2,5 @@
 	"extends": "@richienb/tsconfig",
 	"compilerOptions": {
 		"outDir": "dist/"
-	},
-	"include": [
-		"src/**/*"
-	]
+	}
 }
