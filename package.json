@@ -5,12 +5,13 @@
 	"repository": "https://github.com/Richienb/the-module.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
-	"main": "dist/index.js",
+	"type": "module",
+	"exports": "./dist/index.js",
 	"files": [
 		"dist"
 	],
 	"engines": {
-		"node": ">=10"
+		"node": ">=12.20"
 	},
 	"scripts": {
 		"build": "tsc",
@@ -21,33 +22,25 @@
 	"keywords": [],
 	"dependencies": {},
 	"devDependencies": {
-		"@richienb/tsconfig": "^0.1.1",
-		"ava": "^3.6.0",
-		"eslint-config-richienb": "^0.4.2",
-		"ts-node": "^8.8.2",
-		"typescript": "^3.8.3",
-		"xo": "^0.28.3"
-	},
-	"resolutions": {
-		"eslint": "^6.8.0"
+		"@richienb/tsconfig": "^0.2.1",
+		"ava": "^3.15.0",
+		"eslint-config-richienb": "^0.6.2",
+		"ts-node": "^10.1.0",
+		"typescript": "^4.3.5",
+		"xo": "^0.42.0"
 	},
 	"xo": {
-		"extends": "richienb/typescript",
-		"overrides": [
-			{
-				"files": "test.ts",
-				"rules": {
-					"node/no-missing-import": 0
-				}
-			}
-		]
+		"extends": "richienb"
 	},
 	"ava": {
-		"extensions": [
-			"ts"
-		],
-		"require": [
-			"ts-node/register"
+		"extensions": {
+			"ts": "module"
+		},
+		"nonSemVerExperiments": {
+			"configurableModuleFormat": true
+		},
+		"nodeArguments": [
+			"--loader=ts-node/esm"
 		]
 	}
 }
