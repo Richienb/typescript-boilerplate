@@ -16,7 +16,7 @@
 		"build": "tsc",
 		"lint": "xo",
 		"test": "xo && ava",
-		"prepublishOnly": "tsc"
+		"prepack": "tsc"
 	},
 	"keywords": [],
 	"dependencies": {},
