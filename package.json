@@ -15,7 +15,6 @@
 	},
 	"scripts": {
 		"build": "tsc",
-		"lint": "xo",
 		"test": "xo && ava",
 		"prepack": "tsc"
 	},
